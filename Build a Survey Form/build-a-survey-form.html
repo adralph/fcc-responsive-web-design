@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <link rel="stylesheet" type="text/css" href="fcc-responsive-web-design\Build a Survey Form\build-a-survey-form.css">
+        <main id="main">
+        
+            <div id="header-division">
+            <h1 id="title">Console Preferences</h1>  
+        
+            <p id="description">This is a&nbsp; <strong><em>fake</em></strong> &nbsp;survey attempting to collect information about people's console preferences.</p>
+            </div>
+        
+            <form id="survey-form">
+            
+            <label class="margin" for="name" id="name-label">Name<br> 
+                <div class="center" id="name-division">
+                <input class="margin" id="name" type="text" required placeholder="Please enter a fake name">
+                </div>
+            </label>
+            
+            <label class="margin" for="email" id="email-label">Email<br>
+                <div class="center" id="email-division">
+                <input class="margin" id="email" type="email" required placeholder="Please enter a fake email">
+                </div>
+            </label>
+            
+            <label class="margin" for="number" id="number-label">On a scale of 0 to 10, 0 being very unlikely and 10 being very likely, how likely are you to purchase a PS5 in the next 6 months?<br>
+                <div class="center margin" id="scale-ps5-division">
+                <input class="margin" id="number" type="number" min="0" max="10" required placeholder="Please enter a number">
+                </div>
+            </label>
+            
+            <label class="margin" for="XBox-likely-number" id="XBox-likely-number-label">On a scale of 0 to 10, 0 being very unlikely and 10 being very likely, how likely are you to purchase an XBox Series X in the next 6 months?<br>
+            <div class="center margin" id="scale-xbox-division">  
+                <input class="margin" id="XBox-likely-number" type="number" min="0" max="10" required placeholder="Please enter a number">
+                </div>
+            </label>
+            
+            <label class="margin" for="Nintendo-likely-number" id="Nintendo-likely-number-label">On a scale of 0 to 10, 0 being very unlikely and 10 being very likely, how likely are you to purchase a Nintendo Switch in the next 6 months?<br>
+                <div class="center margin" id="scale-Nintendo-division">
+                <input class="margin" id="Nintendo-likely-number" type="number" min="0" max="10" required placeholder="Please enter a number">
+                </div>
+            </label>
+            
+            <label class="margin" for="ps-favourability">What kind of opinion do you have towards the PS5?
+                <div class="center margin"id="ps-favourability">
+                <label for="favourable" id="favourable-label">Favourable
+                    <input id="favourable" value="favourable" type="radio" name="favourable-unfavourable-PS">
+                </label>
+        
+                <label for="neutral" id="neutral-label">Neutral
+                    <input id="neutral" value="neutral" type="radio" name="favourable-unfavourable-PS">
+                </label>
+        
+                <label for="unfavourable" id="unfavourable-label">Unfavourable
+                    <input id="unfavourable" value="unfavourable" type="radio" name="favourable-unfavourable-PS">
+                </label>
+                </div>
+            </label>
+                
+            <label class="margin" for="xbox-favourability">What kind of opinion do you have towards the XBox Series X?
+                <div class="center margin" id="xbox-favourability">
+                <label for="favourable" id="favourable-label">Favourable
+                    <input id="favourable" value="favourable" type="radio" name="favourable-unfavourable-xbox">
+                </label>
+        
+                <label for="neutral" id="neutral-label">Neutral
+                    <input id="neutral" value="neutral" type="radio" name="favourable-unfavourable-xbox">
+                </label>
+        
+                <label for="unfavourable" id="unfavourable-label">Unfavourable
+                    <input id="unfavourable" value="unfavourable" type="radio" name="favourable-unfavourable-xbox">
+                </label>
+                </div>
+            </label>
+            
+            <label class="margin" for="nintendo-favourability">What kind of opinion do you have towards the PS5?
+                <div class="center margin" id="nintendo-favourability">
+                <label for="favourable" id="favourable-label">Favourable
+                    <input id="favourable" value="favourable" type="radio" name="favourable-unfavourable-nintendo">
+                </label>
+        
+                <label for="neutral" id="neutral-label">Neutral
+                    <input id="neutral" value="neutral" type="radio" name="favourable-unfavourable-nintendo">
+                </label>
+        
+                <label for="unfavourable" id="unfavourable-label">Unfavourable
+                    <input id="unfavourable" value="unfavourable" type="radio" name="favourable-unfavourable-nintendo">
+                </label>
+                </div>
+            </label>
+            
+            <label class="margin" for="ps5-xbox-nintendo" id="ps5-xbox-nintendo-label">What console do you own?
+                <div class="center margin" id="ps5-xbox-nintendo">
+                <label for "ps5" id="ps5-label">PS5
+                    <input id="ps5" value="ps5" type="checkbox" name="ps5-xbox-nintendo">
+                </label>
+        
+                <label for "xbox" id="xbox-label">XBox Series X
+                    <input id="xbox" value="xbox" type="checkbox" name="ps5-xbox-nintendo">
+                </label>
+        
+                <label for "nintendo" id="nintendo-label">Nintendo Switch
+                    <input id="nintendo" value="nintendo" type="checkbox" name="ps5-xbox-nintendo">
+                </label>
+                
+                <label for "none" id="none-label">None
+                    <input id="none" value="none" type="checkbox" name="ps5-xbox-nintendo">
+                </label>
+                </div> 
+            </label>
+            
+            <label class="margin" for="dropdown" id="dropdown-label">What is your console of choice out of the options listen below?<br>
+                <div class="center margin" id="selection-division">  
+                <select name="consoles" id="dropdown">
+                    <option value="PlayStation">PS5</option>
+                    <option value="XBox">XBox Series X</option>
+                    <option value="Nintendo">Nintendo Switch</option>
+                </select>
+                </div>  
+            </label>
+            
+            <label class="margin" for "comments" id="comment-label">Any further comment(s) can be written below:<br>
+                <div id="comments-division">
+                <textarea id="comments" placeholder="Enter your comment(s) here" name="comments">
+                </textarea>
+                </div>
+            </label>
+            
+            <div id="submit-divsion" class="margin">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+            </form>
+            
+        </main>
+    </body>
+</html>
