@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+            /* Resets base by slecting all elements and giving them the following properties */
+            * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            }
+            /* End of base reset */
+
+            @media only screen and (max-width: 1080px) {
+                .thumbnail-container iframe{
+                    width: 540px;
+                }
+            }
+
+
+            #navbar {
+            position: fixed;
+            display: flex;  
+            flex: auto;
+            align-items: stretch;
+            justify-content: space-around;
+            width: 100vw;
+            height: 60px;
+            background: #000;
+            }
+
+            .nav-bar-elements-general-features {
+            flex-grow: 1;
+            text-decoration: none;
+            }
+
+            .nav-bar-text-general-features {
+            display: table-cell;
+            width: 33vw;
+            height: 60px;
+            vertical-align: middle;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 20px;
+            color: #14565f;
+            padding-top: 5px;
+            text-align: center;
+            }
+
+            a.nav-bar-elements-general-features:hover{
+            background-color: #10dedb;
+            }
+
+            p.nav-bar-text-general-features:hover{
+            color: #1ba19f;
+            }
+
+            #rectangle-to-push-welcome-down {
+            height: 60px;
+            }
+
+            #welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("https://images.pexels.com/photos/7464064/pexels-photo-7464064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+            height: 100vh
+            }
+
+            #welcome-section-content{
+            padding: 5%;
+            border-style: solid;
+            font-family: 'Press Start 2P', cursive;
+            background-color: rgba(201, 167, 221, 0.3);
+            font-size: 30px;
+            }
+
+            #projects{
+            background: url("https://images.pexels.com/photos/7464062/pexels-photo-7464062.jpeg?cs=srgb&dl=pexels-sergey-katyshkin-7464062.jpg&fm=jpg");
+            display: flex;
+            flex-direction: column;
+            }
+
+            #projects-welcome{
+            margin: 15px;
+            align-self: center;
+            color: #c9a7dd;
+            font-family: 'Press Start 2P', cursive;
+            }
+
+            #projects-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            }
+
+            .project-tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+
+            .thumbnail-container iframe{
+            width: 1080px;
+            height: 450px;
+            }
+
+            a.project-links:hover{
+            color: rgb(201,167,221);
+            }
+
+            .project-links{
+            font-family: 'Press Start 2P', cursive;
+            color: #145654;
+            padding: 5px;
+            margin: 10px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            text-align: center;
+            }
+
+            #contacts-and-copyright {
+            display: flex;
+            justify-content: space-around;
+            background: black;
+            }
+
+            .contact-links{
+            font-family: 'Press Start 2P', cursive;
+            color: #145654;
+            padding: 5px;
+            margin: 10px;
+            text-decoration: none;
+            }
+
+            a.contact-links:hover{
+            color: rgb(201,167,221);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+        <nav id="navbar">
+            <a id="welcome-section-navigation" href="#welcome-section" class="nav-bar-elements-general-features">
+            <p class="nav-bar-text-general-features">About</p>
+            </a>
+            <a id="projects-section-navigation" href="#projects" class="nav-bar-elements-general-features">
+            <p class="nav-bar-text-general-features">Projects</p>
+            </a>
+            <a id="contact-section-navigation" href="#contacts-and-copyright" class="nav-bar-elements-general-features">
+            <p class="nav-bar-text-general-features">Contact</p>
+            </a>
+        </nav>
+        </header>
+    
+        <main>
+        <div id="rectangle-to-push-welcome-down"></div>
+    
+        <section id="welcome-section" class="make-flex">
+            <div id="welcome-section-image-placeholder">  
+            </div>
+    
+            <div id="welcome-section-content">  
+            <h1>Hey, I am Ashwin,</h1>
+            <p> a web developer. </p>
+            </div>
+        </section>
+    
+        <section id="projects">
+            <p id="projects-welcome">These are my projects: </p>
+            <div id="projects-container">
+            <div id="tribute-page" class="project-tile" >
+                <div id="tribute-container" class="thumbnail-container">
+                <iframe src="https://codepen.io/adralph/full/MWeReRy" frameborder="0"></iframe>
+                </div>
+                <a id="tribute-page-link" href="https://codepen.io/adralph/full/MWeReRy" class="project-links" target="_blank">
+                Tribute Page
+                </a>
+            </div> 
+            
+            <div id="build-a-survey-page" class="project-tile" >
+                <div id="survey-container" class="thumbnail-container">
+                <iframe src="https://codepen.io/adralph/full/dypbqgR" frameborder="0"></iframe>
+                </div>
+                <a id="tribute-page-link" href="https://codepen.io/adralph/full/dypbqgR" class="project-links" target="_blank">
+                Survey Page
+                </a>
+            </div>
+            
+            <div id="product-page" class="project-tile" >
+                <div id="product-container" class="thumbnail-container">
+                <iframe src="https://codepen.io/adralph/full/JjRPVEd" frameborder="0"></iframe>
+                </div>
+                <a id="product-page-link" href="https://codepen.io/adralph/full/JjRPVEd" class="project-links" target="_blank">
+                Product Page
+                </a>
+            </div>
+            
+            <div id="technical-page" class="project-tile" >
+                <div id="technical-container" class="thumbnail-container">
+                <iframe src="https://codepen.io/adralph/full/yLaeVbq" frameborder="0"></iframe>
+                </div>
+                <a id="technical-page-link" href="https://codepen.io/adralph/full/yLaeVbq" class="project-links" target="_blank">
+                Technical Page
+                </a>
+            </div>
+            
+            <div id="show-all-button">
+                <a id="profile-link" target="_blank" href="https://codepen.io/collection/ngypmo" class="project-links">Show all</a>
+            </div>
+            </div>
+        </section>
+        </main>
+        
+        <footer>
+        <div id="contacts-and-copyright">
+            <a id="facebook-link" href="https://en-gb.facebook.com/" target="_blank" class="contact-links">
+            Facebook
+            </a>
+            <a id="twitter-link" href="https://twitter.com/" target="_blank" class="contact-links">
+            Twitter
+            </a>
+            <a id="github-link" href="https://github.com/" target="_blank" class="contact-links">
+            Github
+            </a>
+        </div>
+        </footer>
+    </body>
+</html>

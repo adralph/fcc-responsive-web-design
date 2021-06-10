@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Padauk&family=Raleway:wght@500&display=swap');
+
+            @media all and (max-width: 1300px) {
+            main {
+                flex-direction: column;
+            }
+            
+            #rectangle-for-flex {
+                min-width: 100%;
+            }
+            
+            #navbar {
+                text-align: center;
+            }
+            }
+
+            main {
+            display: flex;
+            }
+
+            header{
+            font-size: 23px;
+            font-family: 'Padauk';
+            }
+
+            p {
+            font-size: 15px;
+            font-family: 'Raleway';
+            color: rgb(105,105,105);
+            }
+
+            code {
+            font-size: 14px;
+            background-color: rgb(220,220,220);
+            padding: 1%;
+            }
+
+            ol {
+            font-size: 15px;
+            font-family: 'Raleway';
+            color: rgb(105,105,105);
+            }
+
+            .main-section {
+            background: rgb(250,250,250);
+            padding: 2%;
+            }
+
+            #rectangle-for-flex {
+            display: flex;
+            position: relative;
+            width: 60%;
+            min-height: 100%;
+            border: solid;
+            margin-right: 2%;
+            }
+
+            #navbar {
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            }
+
+            #header-technical-documentation {
+            border-bottom: solid;
+            border-color: black;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Padauk';
+            }
+
+            #anchor-reference {
+            border-bottom: none;
+            }
+
+            .nav-link {
+            padding: 10px;
+            border-bottom: solid;
+            border-color: black;
+            font-size: 20px;
+            font-family: 'Raleway';
+            text-decoration: none;
+            color: rgb(105,105,105);
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main-doc">
+        
+            <div id="rectangle-for-flex">
+            <nav id="navbar">
+                <header id="header-technical-documentation">Lorem Ipsum</header>
+                <a id="anchor-introduction" href="#Introduction" class="nav-link">Introduction</a>
+        
+                <a id="anchor-section-two" href="#Section_two" class="nav-link">Section two</a>
+        
+                <a id="anchor-section-three" href="#Section_three" class="nav-link">Section three</a>
+        
+                <a id="anchor-section-four" href="#Section_four" class="nav-link">Section four</a>
+        
+                <a id="anchor-reference" href="#Reference" class="nav-link">Reference</a>
+            </nav>
+            </div>
+            
+            <div id="all-sections">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+        
+            </section>
+        
+            <section  class="main-section" id="Section_two">
+                <header>Section two</header>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <code>Praesent et eleifend neque. Suspendisse tristique purus dolor, nec viverra ipsum elementum in.</code>
+        
+                <ol>
+                <li>Praesent et eleifend neque</li>
+                <li>Praesent et neque</li>
+                <li>Et eleifend neque</li>
+                <li>Eleifend neque</li>
+                <li>Neque Praesent et eleifend neque</li>
+                </ol>
+            </section>
+        
+            <section class="main-section" id="Section_three">
+                <header>Section three</header>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <code>Praesent et eleifend neque. Suspendisse tristique purus dolor, nec viverra ipsum elementum in.</code>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <code>Praesent et eleifend neque. Suspendisse tristique purus dolor, nec viverra ipsum elementum in.</code>
+                <br><br>
+            </section>
+        
+            <section class="main-section" id="Section_four">
+                <header>Section four</header>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <code>Praesent et eleifend neque. Suspendisse tristique purus dolor, nec viverra ipsum elementum in.</code>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+                <code>Praesent et eleifend neque. Suspendisse tristique purus dolor, nec viverra ipsum elementum in.</code>
+                <br><br>
+            </section>
+        
+            <section id="Reference" class="main-section">
+                <header>Reference</header>
+        
+                <p>Phasellus augue libero, placerat non mauris non, tristique dictum justo. Vestibulum diam risus, euismod id massa nec, dapibus scelerisque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent in blandit magna, vitae dignissim tellus. Pellentesque lobortis tortor ut lectus congue, vel vehicula tortor aliquet. Vestibulum erat massa, tempus eget lacinia nec, ullamcorper elementum turpis. Donec sed lorem volutpat, porta risus sit amet, luctus nibh. Aenean tristique, elit a fringilla tempor, nibh sapien consectetur nunc, quis mollis ligula ipsum nec ligula. Aliquam aliquam eleifend gravida. </p>
+            </section>
+            </div>
+        </main>
+    </body>
+</html>

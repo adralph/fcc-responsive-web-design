@@ -1,5 +1,102 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+            body{
+            background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+            }
+
+            #title {
+            font-family: 'Big Shoulders Stencil Text', cursive;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+            font-size:50px;
+            }
+
+            #img-div {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            }
+
+            #image {
+            display: inherit;
+            margin: inherit;
+            border-style: ridge;
+            max-width: inherit;
+            animation-name: animation-one;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            }
+
+            @keyframes animation-one {
+            0%{
+            }
+            50%{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            100%{  
+            }
+            }
+
+            @media all and (max-width: 1600px) {
+            #twinkling-image-one {
+                display: none;
+            }  
+            }
+
+            #twinkling-image-one {
+            position: relative;
+            bottom: 1850px;
+            transform: scale(0.5);
+            }
+
+            #twinkling-image-two {
+            position: relative;
+            bottom: 1850px;
+            transform: scale(0.7);
+            }
+
+            #twinkling-image-three {
+            position: relative;
+            bottom: 1850px;
+            transform: scale(0.1);
+            }
+
+            #img-caption {
+            text-align: center;
+            }
+
+            h2{
+            font-family: 'Teko';
+            font-size: 40px;
+            }
+
+            #Notable-events {
+            background-color: white;
+            }
+
+            li{
+            font-family: 'Teko';
+            font-size: 30px;
+            }
+
+            #tribute-info{
+            text-align: center;
+            font-family: 'Goldman', cursive;
+            }
+
+            #tribute-link:hover {
+            color:black;
+            }
+        </style>
+    </head>
     <body>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
